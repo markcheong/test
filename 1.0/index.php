@@ -6,15 +6,15 @@
         <meta name="copyright" content="Copyright (c) 2012 MailChimp. All Rights Reserved."> 
         <meta http-equiv="imagetoolbar" content="false"> 
         <meta name="MSSmartTagsPreventParsing" content="true"> 
-        <link rel="stylesheet" type="text/css" href="screen.css"> 
-        <link rel="stylesheet" type="text/css" href="logins.css"> 
+        <link rel="stylesheet" type="text/css" href="css/screen.css"> 
+        <link rel="stylesheet" type="text/css" href="css/logins.css"> 
         <!--[if lte IE 6]>
-            <link rel="stylesheet" type="text/css" href="ie6.css" />
+            <link rel="stylesheet" type="text/css" href="css/ie6.css" />
         <![endif]--> 
         <!--[if IE 7]>
-            <link rel="stylesheet" type="text/css" href="ie7.css" />
+            <link rel="stylesheet" type="text/css" href="css/ie7.css" />
         <![endif]--> <!--[if IE 8]>
-            <link rel="stylesheet" type="text/css" href="ie8.css" />
+            <link rel="stylesheet" type="text/css" href="css/ie8.css" />
         <![endif]--> 
     </head> 
     <body id="login" class="new_teal">   
@@ -29,14 +29,16 @@
                             <div id="page-heading"></div> 
                             <div id="av-content"> 
                                 <form action="/login/post/" id="login-form" method="POST"> 
-                                    <input type="hidden" name="referrer" class="av-hidden" value="/" id="referrer"> 
-                                    <input type="hidden" name="from" class="av-hidden" value="" id="from"> 
-                                    <fieldset> <legend>Secure Login</legend> 
+                                    <fieldset> 
+                                        <legend>Secure Login</legend>
+                                        <input type="hidden" name="referrer" class="av-hidden" value="/" id="referrer"> 
+                                        <input type="hidden" name="from" class="av-hidden" value="" id="from"> 
                                         <label for="username" class=""><a href="/login/forgot-username/" class="login-forgot-link">forgot username</a> Username</label> 
                                         <input type="text" name="username" tabindex="1" class=" av-text" value="" id="username"> 
                                         <div id="password-group"> <label for="password" class=""><a href="/login/forgot/" class="login-forgot-link">forgot password</a> Password</label> 
                                             <input type="password" name="password" tabindex="2" class=" av-password" value="" id="password"> 
-                                            <span id="show-password-group"> <input type="checkbox" dojotype="dijit.form.CheckBox" name="show-password" id="show-password" value="1" class="av-checkbox"> 
+                                            <span id="show-password-group"> 
+                                                <input type="checkbox" dojotype="dijit.form.CheckBox" name="show-password" id="show-password" value="1" class="av-checkbox"> 
                                                 <label for="show-password" class="inline-label">show password</label> </span> 
                                             <div id="remember-me-group"> <input type="checkbox" dojotype="dijit.form.CheckBox" name="remember-me" id="remember-me" value="1" class="av-checkbox"> 
                                                 <label for="remember-me" class="inline-label">remember me</label> 
