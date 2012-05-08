@@ -8,7 +8,7 @@
         <meta name="MSSmartTagsPreventParsing" content="true"> 
         <link rel="stylesheet" type="text/css" href="css/screen.css"> 
         <link rel="stylesheet" type="text/css" href="css/logins.css">
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js" data-dojo-config="parseOnLoad: true"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js"></script>
         <!--[if lte IE 6]>
             <link rel="stylesheet" type="text/css" href="css/ie6.css" />
         <![endif]--> 
@@ -95,14 +95,14 @@
                                     <div id="password-group"> 
                                         <label for="password" class=""><a href="/login/forgot/" class="login-forgot-link">forgot password</a> Password</label> 
                                         <input type="password" name="password" tabindex="2" class=" av-password" value="" id="password"> 
-                                        <span id="show-password-group"> 
-                                            <input type="checkbox" dojotype="dijit.form.CheckBox" name="show-password" id="show-password" value="1" class="av-checkbox"> 
+                                        <span id="show-password-group">
+                                            <input type="checkbox" data-dojo-type="dijit.form.CheckBox" name="show-password" id="show-password" value="1" class="av-checkbox"> 
                                             <label for="show-password" class="inline-label">show password</label>
                                         </span> 
-                                        <div id="remember-me-group"> 
-                                            <input type="checkbox" dojotype="dijit.form.CheckBox" name="remember-me" id="remember-me" value="1" class="av-checkbox"> 
+                                        <div id="remember-me-group">
+                                            <input type="checkbox" data-dojo-type="dijit.form.CheckBox" name="remember-me" id="remember-me" value="1" class="av-checkbox"> 
                                             <label for="remember-me" class="inline-label">remember me</label> 
-                                        </div> 
+                                        </div>
                                         <div class="clear"></div> 
                                     </div> 
                                     <input type="submit" value="log in" class="button float-left" tabindex="3" onclick="this.value='please wait...'; setTimeout(function() { this.disabled=true; dojo.addClass(this, 'disabled'); }, 0);"> 
@@ -120,9 +120,9 @@
             </div> 
             <div id="footer_links"> 
                 <ul> 
-                    <li><a onclick="_gaq.push(['_trackEvent', document.title, 'login link', 'twitter']);" href="http://www.twitter.com/mailchimp/" title="Follow Us on Twitter" class="icon16 icon-Twitter-16x16" target="_blank">Follow Us</a></li> 
-                    <li><a onclick="_gaq.push(['_trackEvent', document.title, 'login link', 'facebook']);" href="http://www.facebook.com/mailchimp/" title="Become a Fan on Facebook" class="icon16 icon-FaceBook-16x16" target="_blank">Become a Fan</a></li>  
-                    <li><a onclick="_gaq.push(['_trackEvent', document.title, 'login link', 'AlterEgo']);" href="http://alteregoapp.com" title="AlterEgo 2-Factor Security" class="icon16 icon-alterego_16" target="_blank">Enhance Security</a></li> 
+                    <li><a href="http://www.twitter.com/mailchimp/" title="Follow Us on Twitter" class="icon16 icon-Twitter-16x16" target="_blank">Follow Us</a></li> 
+                    <li><a href="http://www.facebook.com/mailchimp/" title="Become a Fan on Facebook" class="icon16 icon-FaceBook-16x16" target="_blank">Become a Fan</a></li>  
+                    <li><a href="http://alteregoapp.com" title="AlterEgo 2-Factor Security" class="icon16 icon-alterego_16" target="_blank">Enhance Security</a></li> 
                 </ul> 
             </div> 
         </div> 
